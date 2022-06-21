@@ -18,7 +18,7 @@ body {
 }
 
 .navbar-brand {
-  padding: 0 5rem 0 2rem; 
+  padding: 0 2rem 0 2rem; 
 }
 
 .navbar {
@@ -67,7 +67,7 @@ h4 {
 }
 
 .banner-image > img{
-    padding: 7rem 0;
+    padding: 20rem 0;
     width: 90rem;
 }
 
@@ -87,17 +87,44 @@ h4 {
     box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 }
 
-.primary-button:hover{
+.primary-button:hover {
     background: whitesmoke;
     background-clip: padding-box;
 }
 
-.primary-button::after{
-    position: absolute;
-    top: -2px; left: -2px;
-    bottom: -2px;  right: -2px;
-    background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
-    content: '';
-    z-index: -1;    
-    border-radius: 4px;
+.primary-button::after {
+  position: absolute;
+  top: -2px; left: -2px;
+  bottom: -2px;  right: -2px;
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  content: '';
+  z-index: -1;    
+  border-radius: 4px;
+}
+/* About Me */
+
+.about {
+  padding: 8rem 5rem;
+}
+
+.about-me {
+  padding-top: 20px;
+}
+
+.about-img {
+  width: 80%;
+}
+
+.about-me::after {
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: #4458dc;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.paragraph {
+    color: black;
 }
