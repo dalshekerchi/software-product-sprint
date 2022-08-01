@@ -1,3 +1,7 @@
+body {
+  color: #0072E1;
+  font-family: 'Josefin Sans', sans-serif;
+}
 #content {
   margin-left: auto;
   margin-right: auto;
@@ -6,4 +10,121 @@
 
 #greeting-container {
   margin-top: 20px;
+}
+
+/* Nav Bar */
+#logo {
+  width: 50px;
+}
+
+.navbar-brand {
+  padding: 0 2rem 0 2rem; 
+}
+
+.navbar {
+  padding: 1rem 5rem;
+}
+
+.nav-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: black;
+  text-indent: 50px;
+}
+
+.active a {
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar-nav a:hover {
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+}
+
+/* Banner */
+
+/* .banner {
+
+} */
+
+h3 {
+  padding-top: 25%;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+.banner-image > img{
+    padding: 20rem 0;
+    width: 90rem;
+}
+
+.button {
+    padding: .8rem 1rem;
+    position: relative;
+    font: normal 500 16px/20px 'Josefin Sans', sans-serif;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.primary-button {
+    background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+.primary-button:hover {
+    background: whitesmoke;
+    background-clip: padding-box;
+}
+
+.primary-button::after {
+  position: absolute;
+  top: -2px; left: -2px;
+  bottom: -2px;  right: -2px;
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  content: '';
+  z-index: -1;    
+  border-radius: 4px;
+}
+/* About Me */
+
+.about {
+  padding: 8rem 5rem;
+}
+
+.about-me {
+  padding-top: 20px;
+}
+
+.about-img {
+  width: 80%;
+}
+
+.about-me::after {
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: #4458dc;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.paragraph {
+    color: black;
 }
