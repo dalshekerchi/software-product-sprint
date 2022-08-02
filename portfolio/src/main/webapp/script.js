@@ -28,9 +28,9 @@ function addRandomGreeting() {
 }
 
 async function getContributions() {
-  var data = await (await fetch(`https://corsanywhere.herokuapp.com/https://github-contributions-api.deno.dev/dalshekerchi.svg`)).json();
+  var data = await (await fetch(`https://corsanywhere.herokuapp.com/https://github-contributions-api.deno.dev/dalshekerchi.json`)).json();
   const totalContributions = data.totalContributions
 
-  const dateContainer = document.getElementById('date-container');
+  const dateContainer = document.getElementById('contributions');
   dateContainer.innerText = totalContributions;
 }
