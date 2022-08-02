@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+    ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -25,4 +25,12 @@ function addRandomGreeting() {
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
+}
+
+async function getContributions() {
+  var data = await (await fetch(`https://corsanywhere.herokuapp.com/https://github-contributions-api.deno.dev/dalshekerchi.svg`)).json();
+  const totalContributions = data.totalContributions
+
+  const dateContainer = document.getElementById('date-container');
+  dateContainer.innerText = totalContributions;
 }

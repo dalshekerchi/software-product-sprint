@@ -2,6 +2,7 @@ body {
   color: #0072E1;
   font-family: 'Josefin Sans', sans-serif;
 }
+
 #content {
   margin-left: auto;
   margin-right: auto;
@@ -18,7 +19,7 @@ body {
 }
 
 .navbar-brand {
-  padding: 0 2rem 0 2rem; 
+  padding: 0 2rem 0 2rem;
 }
 
 .navbar {
@@ -66,41 +67,44 @@ h4 {
   font-size: 1.25rem;
 }
 
-.banner-image > img{
-    padding: 20rem 0;
-    width: 90rem;
+.banner-image>img {
+  padding: 20rem 0;
+  width: 90rem;
 }
 
 .button {
-    padding: .8rem 1rem;
-    position: relative;
-    font: normal 500 16px/20px 'Josefin Sans', sans-serif;
-    border: 3px solid transparent;
-    border-radius: 4px;
+  padding: .8rem 1rem;
+  position: relative;
+  font: normal 500 16px/20px 'Josefin Sans', sans-serif;
+  border: 3px solid transparent;
+  border-radius: 4px;
 }
 
 .primary-button {
-    background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
-    background-clip: padding-box;
-    color: whitesmoke;
-    transition: background .6s ease;
-    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  background-clip: padding-box;
+  color: whitesmoke;
+  transition: background .6s ease;
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 }
 
 .primary-button:hover {
-    background: whitesmoke;
-    background-clip: padding-box;
+  background: whitesmoke;
+  background-clip: padding-box;
 }
 
 .primary-button::after {
   position: absolute;
-  top: -2px; left: -2px;
-  bottom: -2px;  right: -2px;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
   background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
   content: '';
-  z-index: -1;    
+  z-index: -1;
   border-radius: 4px;
 }
+
 /* About Me */
 
 .about {
@@ -116,15 +120,20 @@ h4 {
 }
 
 .about-me::after {
-    content: " ";
-    height: 2px;
-    width: 18vw;
-    background: #4458dc;
-    display: inline-block;
-    margin-left: 5%;
-    transform: translateY(-10px);
+  content: " ";
+  height: 2px;
+  width: 18vw;
+  background: #4458dc;
+  display: inline-block;
+  margin-left: 5%;
+  transform: translateY(-10px);
 }
 
 .paragraph {
-    color: black;
+  color: black;
+}
+
+.fun-fact {
+  text-align: right;
+  padding: 2rem;
 }
