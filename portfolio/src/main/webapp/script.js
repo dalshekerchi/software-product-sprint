@@ -13,24 +13,25 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Gets number of github contributions from my account
  */
-function addRandomGreeting() {
-  const greetings =
-    ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
-
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
-}
 
 async function getContributions() {
-  var data = await (await fetch(`https://corsanywhere.herokuapp.com/https://github-contributions-api.deno.dev/dalshekerchi.json`)).json();
-  const totalContributions = data.totalContributions
+    var data = await (await fetch(`https://corsanywhere.herokuapp.com/https://github-contributions-api.deno.dev/dalshekerchi.json`)).json();
+    const totalContributions = data.totalContributions;
 
-  const dateContainer = document.getElementById('contributions');
-  dateContainer.innerText = totalContributions;
+    const dateContainer = document.getElementById('contributions');
+    dateContainer.innerText = totalContributions;
 }
+
+async function randomFreeTimeActivity() {
+    const getActivities = await fetch('/free-time');
+    const activity = await getActivities.json();
+  
+    // Pick a random greeting.
+    const chooseRandomActivity = activity[Math.floor(Math.random() * activity.length)];
+  
+    // Add it to the page.
+    const greetingContainer = document.getElementById('free-time');
+    greetingContainer.innerText = chooseRandomActivity;
+  }

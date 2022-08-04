@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.google.gson.Gson;
 
 /** Handles requests sent to the /fun-fact URL. Try running a server and navigating to /fun-fact! */
-@WebServlet("/i-like")
+@WebServlet("/free-time")
 public class JSONServlet extends HttpServlet {
     private static final ArrayList < String > iLike = new ArrayList < > (Arrays.asList(
         "skiing", " karaoking",
@@ -21,9 +21,8 @@ public class JSONServlet extends HttpServlet {
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html;");
+        response.setContentType("text/json;");
 
-        Gson gson = new Gson();
         String json = gson.toJson(iLike);
         response.getWriter().println(json);
     }
