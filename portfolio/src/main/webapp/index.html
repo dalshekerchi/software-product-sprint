@@ -1,115 +1,126 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Dana's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Josefin+Sans&family=Roboto&display=swap" rel="stylesheet">
-  </head>
-  <body>
-      <!-- Nav Bar -->
-      <header>
-          <div class="menu">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><img id="logo" src="images/logo-social-sq.png" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <div class="me-auto"></div>  
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>Dana's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Josefin+Sans&family=Roboto&display=swap"
+    rel="stylesheet">
+</head>
+
+<body onload="getContributions();">
+  <!-- Nav Bar -->
+  <header>
+    <div class="menu">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img id="logo" src="images/logo-social-sq.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="me-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Home Area -->
+  <main>
+    <section class="banner">
+      <div class="container">
+        <div class="row justify-content-evenly">
+          <div class="col-lg-7 col-md-12">
+            <h3 class="title-text">Hey there!</h3>
+            <h1 class="title-text text-uppercase">I'm Dana</h1>
+            <h4 class="title-text text-uppercase">Software Developer</h4>
+            <div class="site-buttons">
+              <div class="d-flex flex-row flex-wrap">
+                <button type="button" class="btn button primary-button me-4">Get In Touch</button>
+              </div>
+            </div>
           </div>
-      </header>
-      
-      <!-- Main Home Area -->
-      <main>
-          <section class="banner">
-              <div class="container">
-                  <div class="row justify-content-evenly">
-                      <div class="col-lg-7 col-md-12">
-                        <h3 class="title-text">Hey there!</h3>
-                        <h1 class="title-text text-uppercase">I'm Dana</h1>
-                        <h4 class="title-text text-uppercase">Software Developer</h4>
-                        <div class="site-buttons">
-                            <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn button primary-button me-4">Get In Touch</button>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-5 col-md-12 banner-img">
-                          <img src="./images/profile.jpg" alt="banner-img" class="img-fluid">
-                    </div>
-                  </div>
-              </div>
-          </section>
-          <!-- About Me -->
-          <section class="about">
-              <div class="container">
-                  <div class="row justify-content-evenly">
-                      <div class="col-lg-6 col-med-12">
-                        <div class="about-img">
-                            <img src="images/about-img.png" alt="About me" class="img-fluid">
-                        </div>
-                      </div>
-                      <div class="col-lg-6 col-med-12 about-title">
-                          <h2 class="about-me text-uppercase">
-                              <span>About Me!</span>
-                          </h2>
-                          <p class="paragraph py-4 w-75">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </section>
-          <section>
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-12">
-                      </div>
-                  </div>
-              </div>
-          </section>
-      </main>
+          <div class="col-lg-5 col-md-12 banner-img">
+            <img src="./images/profile.jpg" alt="banner-img" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Me -->
+    <section class="about">
+      <div class="container">
+        <div class="row justify-content-evenly">
+          <div class="col-lg-6 col-med-12">
+            <div class="about-img">
+              <img src="images/about-img.png" alt="About me" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-6 col-med-12 about-title">
+            <h2 class="about-me text-uppercase">
+              <span>About Me!</span>
+            </h2>
+            <p class="paragraph py-4 w-75">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+          </div>
+        </div>
+      </div>
+    </section>
+    <form action="/stored-data" method="POST">
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Let's Chat!</label>
+            <textarea name= "text-input" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <p class="fun-fact">
+        A fun fact about myself is that this year I have made <span id="contributions"></span> github
+      contributions this year!
+    </p>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
 
-
-      <!-- <p>This is Dana Al Shekerchi's portfolio.</p>
-      <p>Hi there! My name is Dana Al Shekerchi. I'm currenly studing Computer Science at the Univeristy of Toronto. </p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div> -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
 </html>
